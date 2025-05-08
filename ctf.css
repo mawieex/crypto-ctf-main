@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2c3e50, #2980b9);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f39c12;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.intro-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #bdc3c7;
+    letter-spacing: 1px;
+}
+
+.highlight {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.input-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.answer-field {
+    padding: 12px 20px;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid #f39c12;
+    background-color: #1e2a47;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.answer-field:focus {
+    border-color: #e74c3c;
+    box-shadow: 0 0 10px rgba(231, 76, 60, 0.7);
+    outline: none;
+}
+
+.submit-button {
+    padding: 12px 25px;
+    background-color: #f39c12;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #e67e22;
+    transform: translateY(-5px);
+}
+
+.submit-button:active {
+    transform: translateY(2px);
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #f39c12;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+    }
+
+    .answer-field {
+        width: 200px;
+    }
+
+    .submit-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}

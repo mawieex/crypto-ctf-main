@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silas' Reversal</title>
+    <link rel="stylesheet" href="ctf.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Silas’ Reversal</h1>
+        <p>Silas leaves you a poetic warning, etched into the side of a shuttle panel:</p>
+        
+        <p><strong>Encrypted message:</strong> Zgyzhs lu z kvih zmbgsrmt.</p>
+        
+        <p><strong>Hint:</strong> Silas is unpredictable. He used an Atbash cipher (A ↔ Z, B ↔ Y, etc.).</p>
+
+        <div class="input-container">
+            <input type="text" id="answer" class="answer-field" placeholder="Enter your answer here...">
+            <button onclick="checkAnswer('CTF{pilot_attack}', 'flag4.html')" class="submit-button">Submit Answer</button>
+        </div>
+
+        <div id="result"></div>
+
+        <!-- Hidden Next Button Section -->
+        <div id="nextButtonDiv" style="display: none;">
+            <button id="nextButton" class="submit-button">Next Stage</button>
+        </div>
+    </div>
+
+    <script src="ctf.js"></script>
+</body>
+</html>

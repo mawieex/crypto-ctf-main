@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vega's Message</title>
+    <link rel="stylesheet" href="ctf.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Vega’s Message</h1>
+        <p>As you step into the captain's quarters, you find a note with a cryptic message. Vega always loved using codes.</p>
+        <p><strong>Encrypted message:</strong> Pz h zhfily aolc hwwyfwhy!</p>
+        <p><strong>Hint:</strong> Vega is all about tradition and discipline. He used a Caesar cipher with a shift of +7.</p>
+
+        <div class="input-container">
+            <input type="text" id="answer" class="answer-field" placeholder="Enter your answer here...">
+            <button onclick="checkAnswer('CTF{captain_approved}', 'flag2.html')" class="submit-button">Submit Answer</button>
+        </div>
+
+        <div id="result"></div>
+
+        <!-- Hidden Next Button Section -->
+        <div id="nextButtonDiv" style="display: none;">
+            <button id="nextButton" class="submit-button">Next Stage</button>
+        </div>
+    </div>
+
+    <script src="ctf.js"></script>
+</body>
+</html>

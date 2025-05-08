@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orion's Poem</title>
+    <link rel="stylesheet" href="ctf.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Orion’s Poem</h1>
+        <p>In a journal tucked inside a drawer, you find a faded poem written in delicate handwriting:</p>
+        
+        <pre><strong>Poem Fragment:</strong>
+Never fading ember  
+Over distant memory  
+Visions blurred by tears  
+Always burning bright  
+        </pre>
+        
+        <p><strong>Hint:</strong> Orion is poetic. Look at the first letters of each line — they spell something.</p>
+
+        <div class="input-container">
+            <input type="text" id="answer" class="answer-field" placeholder="Enter your answer here...">
+            <button onclick="checkAnswer('CTF{nova}', 'flag5.html')" class="submit-button">Submit Answer</button>
+        </div>
+
+        <div id="result"></div>
+
+        <!-- Hidden Final Button Section -->
+        <div id="nextButtonDiv" style="display: none;">
+            <button id="nextButton" class="submit-button">Next Stage</button>
+        </div>
+    </div>
+
+    <script src="ctf.js"></script>
+</body>
+</html>

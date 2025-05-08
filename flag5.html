@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Final Confession</title>
+    <link rel="stylesheet" href="ctf.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Who Sent the Confession?</h1>
+        <p>You've gathered all four clues, and now it's time to answer the ultimate question.</p>
+        
+        <p><strong>Hint:</strong> AMOREN'S FAVORITE CHIPS</p>
+
+
+        <div class="input-container">
+            <input type="text" id="answer" class="answer-field" placeholder="Type the name here...">
+            <button onclick="checkAnswer('Nova', 'end.html')" class="submit-button">Submit Answer</button>
+        </div>
+
+        <div id="result"></div>
+
+        <!-- Hidden Next Button Section -->
+        <div id="nextButtonDiv" style="display: none;">
+            <button id="nextButton" class="submit-button">Reveal the Ending</button>
+        </div>
+    </div>
+
+    <script src="ctf.js"></script>
+</body>
+</html>
