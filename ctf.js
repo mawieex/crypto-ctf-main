@@ -14,3 +14,4 @@ function checkAnswer(correctAnswer, nextPage) {
         resultDiv.textContent = 'Incorrect. Please try again!';
     }
 }
+

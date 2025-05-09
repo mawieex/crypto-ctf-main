@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova's Binary Brain</title>
-    <link rel="stylesheet" href="ctf.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nova’s XOR Lab</title>
+  <link rel="stylesheet" href="ctf.css" />
+
 </head>
 <body>
 
-    <div class="container">
-        <h1>Nova’s Binary Brain</h1>
-        <p>In Nova’s lab, you find a terminal glowing softly. A string of binary code pulses gently on the screen:</p>
-        
-        <pre><strong>Binary sequence:</strong>
-01000011 01010100 01000110 01111011 01101100 01101111 01110110 01100101 01111101
-        </pre>
-        
-        <p><strong>Hint:</strong> Nova thinks in code. Convert the binary to text using ASCII.</p>
+  <div class="container">
+    <h1>Nova’s XOR Lab</h1>
+    <p>Nova encrypted her final thought. A binary message appears:</p>
 
-        <div class="input-container">
-            <input type="text" id="answer" class="answer-field" placeholder="Enter your answer here...">
-            <button onclick="checkAnswer('CTF{love}', 'flag3.html')" class="submit-button">Submit Answer</button>
-        </div>
+    <pre><strong>Binary Stream:</strong>
+        01001110 01101111 01110100 00100000 01110100 01101000 01101001 01110011<br>
+        01011011 01001010 01011000 01101000 01100010 01100111 01110010 01111001 01011011
+    </pre>
 
-        <div id="result"></div>
+    <p><strong>Hint:</strong> One lies. One hums in binary.</p>
+    <p><strong>Hint:</strong> XOR with 0x13, then shift back five.</p>
 
-        <!-- Hidden Next Button Section -->
-        <div id="nextButtonDiv" style="display: none;">
-            <button id="nextButton" class="submit-button">Next Stage</button>
-        </div>
+  
+    
+    <div class="input-container">
+        <input type="text" id="answer" class="answer-field" placeholder="Enter your answer here...">
+        <button onclick="checkAnswer('CTF{love}', 'flag3.html')" class="submit-button">Submit</button>
+      </div>
+  
+      <div id="result"></div>
+
+    <div id="nextButtonDiv" style="display: none;">
+      <button id="nextButton" class="submit-button">Next Stage</button>
     </div>
+  </div>
 
-    <script src="ctf.js"></script>
+  <script src="ctf.js"></script>
 </body>
 </html>
